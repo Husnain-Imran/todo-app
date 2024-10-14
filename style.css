@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "popins" , Calibri, 'Trebuchet MS';
+}
+.container{
+    background-color: purple;
+    width: 100%;
+    min-height: 100vh;
+   padding: 10px;
+    
+}
+.to-do{
+    width: 100%;
+    max-width: 540px;
+    background-color: aliceblue;
+    margin: 100px auto 20px;
+    padding: 70px 30px 70px;
+    border-radius: 10px;
+
+}
+.add-container {
+    position: relative;
+    margin-top: 20px;
+}
+.add-container input{
+
+    height: 55px;
+    width: 470px;
+    border: none;
+    background-color: bisque;
+    border-radius: 30px;
+    padding-left: 15px;
+    font-size: 20px;
+
+
+
+}
+.add-container input::placeholder{
+
+   
+    font-size: 20px;
+
+
+
+}
+.add-container button{
+    background-color: darkviolet;
+    height: 55px;
+    width: 60px;
+    border: none;
+    border-radius: 27px;
+    color: white;
+}
+
+#add-button{
+    position: absolute;
+    left: 410px;
+    cursor: pointer;
+    
+}
+ul li {
+    list-style: none;
+    font-size: 19px;
+    padding: 17px 33px 14px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+
+}
+ul li.checked
+{
+    color: #555;
+    text-decoration: line-through;  
+}
+ul li.checked::before
+{
+    background-image: url(images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color : #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius:50% ;
+
+}
